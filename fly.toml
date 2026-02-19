@@ -5,7 +5,9 @@ primary_region = "gru"
   internal_port = 80
   force_https = true
   auto_start_machines = true
-
-  # para debug, que NO se duerma
   auto_stop_machines = "off"
   min_machines_running = 1
+
+[[mounts]]
+  source = "paneldata"
+  destination = "/app/var"
