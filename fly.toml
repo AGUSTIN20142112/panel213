@@ -1,0 +1,14 @@
+app = "panel213"
+primary_region = "gru"
+
+[http_service]
+  internal_port = 80
+  force_https = true
+  auto_start_machines = true
+  auto_stop_machines = "stop"
+  min_machines_running = 0
+
+# (Opcional pero recomendado) Si vas a usar volumen para que no se pierda config/cache
+# [[mounts]]
+#   source = "paneldata"
+#   destination = "/app/var"
